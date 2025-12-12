@@ -46,14 +46,24 @@ DELETE /delete – Supprimer un livre (envoi name et author dans body)
 
 PATCH /book – Modifier un livre (envoi name, author et status dans body)
 
-Gestion des erreurs de manière basique (livre non trouvé, doublon, problème serveur)
+Gestion des erreurs de manière basique (livre non trouvé, doublon à travers les indexes, problème serveur (500) ou problème requete (400) .., remplir touts les champs du form)
 
 Utilisation de MongoDB pour le stockage des livres
 
-3- Base de données (MongoDB Atlas)
+3-Base de donnée (MongoDB Atlas) :
 
-La base de donnée est nommée : myBookDB
+Nom de la base de données : myBookDB
 
-La collection est : book. 
+Collection : book
 
-Chaque document est composé de 5 attributs : id (automatiquement générée) , name, author, genre, status. 
+Structure d’un document :
+
+_id : identifiant généré automatiquement par MongoDB
+
+name : nom du livre
+
+author : nom de l’auteur
+
+genre : genre du livre
+
+status : état du livre (terminé, en cours de lecture, en pause, va lire)
