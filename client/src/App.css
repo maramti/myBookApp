@@ -1,0 +1,85 @@
+/* === GLOBAL PAGE === */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffe6ef;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.titre {
+  font-size: 32px;
+  color: #d64d7f;
+  margin-bottom: 20px;
+}
+
+/* === INPUTS === */
+input, select {
+  padding: 10px;
+  border: 1px solid #ffafc6;
+  border-radius: 8px;
+  width: 200px;
+  margin: 8px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #d64d7f;
+}
+
+/* === BUTTONS === */
+button {
+  background: #ff8fb3;
+  border: none;
+  padding: 10px 18px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #d64d7f;
+}
+
+/* === CARDS (Get, Add, Patch, Delete) === */
+.card {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+/* === LISTES === */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffe6ef;
+  margin: 8px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* FORM LABELS */
+label {
+  font-weight: bold;
+  color: #d64d7f;
+}
