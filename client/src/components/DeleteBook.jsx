@@ -26,7 +26,7 @@ function DeleteBook(){
         console.error(e);
        } }
     return(
-        <div className="card">
+        <div className="card side-card">
   <form onSubmit={handleSubmit}>
     <label>Titre du livre :</label>
     <input type="text" value={nameBook} onChange={(e) => setNameBook(e.target.value)} />

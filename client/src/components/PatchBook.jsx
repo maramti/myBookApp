@@ -28,7 +28,7 @@ function PatchBook() {
     };
 
     return (
-       <div className="card">
+       <div className="card side-card">
   <form onSubmit={handleSubmit}>
     <label htmlFor="titre">Titre du livre :</label>
     <input id="titre" type="text" value={nameBook} onChange={(e) => setNameBook(e.target.value)} /> <br/>

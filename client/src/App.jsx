@@ -9,6 +9,7 @@ import DeleteBook from './components/deleteBook';
 import PatchBook from './components/PatchBook';
 import GetBookSearch from './components/GetBookSearch';
 import GetAllBooks from './components/GetAllBooks' 
+import caht from './assets/caht.png'
 
 function App() {
   const [showAdd, setShowAdd] = useState(false)
@@ -21,6 +22,7 @@ function App() {
     setShowSearch(true);   // afficher le composant GetBookSearch
   };
   return (
+    <div>
     <div className="header">
   <h1 className="titre">Ma Librairie</h1>
 
@@ -40,17 +42,19 @@ function App() {
     <GetAllBooks />
   </div>
 
-  <button onClick={() => setShowAdd(true)}>Ajouter un livre</button>
+  <button onClick={() => setShowAdd(prev => !prev)}>Ajouter un livre</button>
   {showAdd && <div className="card"><AddBook /></div>}
 
-  <button onClick={() => setShowDelete(true)}>Éliminer un livre</button>
+
+  <button onClick={() => setShowDelete(prev => !prev)}>Éliminer un livre</button>
   {showDelete && <div className="card"><DeleteBook /></div>}
 
-  <button onClick={() => setShowPatch(true)}>Modifier un livre</button>
+  <button onClick={() => setShowPatch(prev => !prev)}>Modifier un livre</button>
   {showPatch && <div className="card"><PatchBook /></div>}
 </div>
-
+  
+</div>
   );
 }
-
+//<img src={caht} alt="photo" className="photo" />
 export default App;

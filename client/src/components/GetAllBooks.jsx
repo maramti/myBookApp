@@ -18,7 +18,7 @@ function GetBookAll() {
   }, []);
 
   return (
-    <div className="card">
+    <div className="card ">
   <h2>Mes livres :</h2>
 
   {books.length === 0 ? (
@@ -27,8 +27,8 @@ function GetBookAll() {
     <ul>
       {books.map((book, index) => (
         <li key={index}>
-          <strong>{book.name}</strong> — {book.author}
-          (état : {book.status || "non défini"})
+          <strong>{book.name}</strong> {book.author}
+         
         </li>
       ))}
     </ul>
